@@ -1,0 +1,18 @@
+.logo {
+  display: inline-block;
+  width: 19rem;
+  position: relative
+}
+.logo img {
+  transition: .25s
+}
+.logo-white {
+  position: absolute;
+  inset: 0;
+  opacity: 0
+}
+@media (max-width:48em) {
+  .logo {
+    width: 25rem
+  }
+}

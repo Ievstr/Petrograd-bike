@@ -1,0 +1,21 @@
+.title {
+  font-size: 10rem;
+  font-family: 'Soviet Font',sans-serif;
+  line-height: 1.5;
+  letter-spacing: .02em
+}
+.title_2 {
+  font-size: 6rem;
+  line-height: 2.5;
+  text-align: center
+}
+@media (max-width:48em) {
+  .title {
+    font-size: 8rem;
+    text-align: center
+  }
+  .title_2 {
+    font-size: 8rem;
+    line-height: 1.5
+  }
+}

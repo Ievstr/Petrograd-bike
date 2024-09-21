@@ -1,0 +1,132 @@
+.form__content {
+  margin-bottom: 4rem
+}
+.form__bottom {
+  display: flex;
+  align-items: center
+}
+.form__button {
+  margin-right: 1.5rem
+}
+.form__privacy {
+  font-size: 1.4rem
+}
+input {
+  width: 100%;
+  height: 6rem;
+  border: 1px solid #bdb199;
+  border-radius: 0;
+  background-color: #f1f1f1;
+  padding: 0 1.9rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 2rem;
+  color: #192632;
+  transition: .25s
+}
+input:focus,
+input:hover {
+  border-color: #192632
+}
+input:not(:-moz-placeholder-shown):valid {
+  border-color: #192632
+}
+input:not(:placeholder-shown):valid {
+  border-color: #192632
+}
+input:checked ~ .label__box {
+  border-color: #fc0000
+}
+input:checked ~ .label__box::after {
+  opacity: 1
+}
+input::-moz-placeholder {
+  color: #bdb199
+}
+input::placeholder {
+  color: #bdb199
+}
+input.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden
+}
+.label {
+  width: 100%;
+  display: inline-flex;
+  cursor: pointer
+}
+.label:not(:last-child) {
+  margin-bottom: 1rem
+}
+.label_checkbox {
+  display: flex;
+  -webkit-tap-highlight-color: transparent
+}
+.label_checkbox:hover .label__box {
+  border-color: #fc0000
+}
+.label__box {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+  border: 1px solid #192632;
+  margin-right: .5rem;
+  position: relative;
+  transition: .25s
+}
+.label__box::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: .4rem;
+  height: .4rem;
+  opacity: 0;
+  transition: opacity .25s;
+  background-color: #fc0000
+}
+@media (max-width:48em) {
+  .form__content {
+    margin-bottom: 6rem
+  }
+  .form__bottom {
+    display: flex;
+    flex-direction: column
+  }
+  .form__button {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 2.4rem
+  }
+  .form__privacy {
+    font-size: 2.8rem
+  }
+  input {
+    height: 12rem;
+    padding: 0 3.4rem;
+    font-size: 4rem
+  }
+  .label {
+    width: 100%
+  }
+  .label:not(:last-child) {
+    margin-bottom: 2rem
+  }
+  .label__box {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem
+  }
+  .label__box::after {
+    width: .8rem;
+    height: .8rem
+  }
+}

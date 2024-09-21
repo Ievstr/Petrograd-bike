@@ -1,0 +1,64 @@
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 9.9rem;
+  height: 9.9rem;
+  border-radius: 50%;
+  border: 1px solid #192632;
+  background-color: #f1f1f1
+}
+.link:hover {
+  border-color: #fc0000
+}
+.link:hover > svg {
+  stroke: #fc0000
+}
+.link:hover .link__text svg,
+.link:hover>svg.fill {
+  fill: #fc0000
+}
+.link:active {
+  border-color: #b90303
+}
+.link:active > svg {
+  stroke: #b90303
+}
+.link:active > svg.fill {
+  fill: #b90303
+}
+.link:active .link__text svg {
+  fill: #b90303
+}
+.link svg {
+  transition: .25s
+}
+.link > svg {
+  width: 3.7rem;
+  height: 3.7rem;
+  stroke: #192632
+}
+.link > svg.stroke {
+  stroke-width: 5px
+}
+.link__text {
+  position: absolute;
+  inset: -2rem
+}
+.link__text svg {
+  width: 100%;
+  height: 100%
+}
+@media (max-width:48em) {
+  .link {
+    width: 14.8rem;
+    height: 14.8rem
+  }
+  .link > svg {
+    width: 5.4rem;
+    height: 5.4rem
+  }
+  .link__text {
+    inset: -3rem
+  }
+}

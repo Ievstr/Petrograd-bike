@@ -1,0 +1,35 @@
+.footer {
+  padding: 3rem 0;
+  background-color: #192632;
+  color: #f1f1f1
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem
+}
+.footer__copy span {
+  margin-right: .8rem
+}
+.footer__creator {
+  color: #5a636b
+}
+.footer__creator span {
+  color: #f1f1f1;
+  text-decoration: underline;
+  transition: .25s
+}
+.footer__creator:hover span {
+  color: #fc0000
+}
+@media (max-width:48em) {
+  .footer__content {
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2.8rem
+  }
+  .footer__copy {
+    margin-bottom: 1.8rem
+  }
+}

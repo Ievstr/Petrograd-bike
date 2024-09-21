@@ -1,0 +1,21 @@
+.feedback {
+  padding: 18.3rem 0 13.7rem
+}
+.feedback__title {
+  margin-bottom: 2rem
+}
+.feedback .form {
+  max-width: 61.3rem;
+  margin: 0 auto
+}
+@media (max-width:48em) {
+  .feedback {
+    padding: 35.2rem 0 28.2rem
+  }
+  .feedback__title {
+    margin-bottom: 8rem
+  }
+  .feedback .form {
+    max-width: none
+  }
+}

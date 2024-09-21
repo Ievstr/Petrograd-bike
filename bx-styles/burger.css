@@ -1,0 +1,39 @@
+.burger {
+  display: none
+}
+@media (max-width:48em) {
+  .burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 6rem;
+    height: 6rem;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+    transition: .25s
+  }
+  .burger span {
+    width: 100%;
+    height: .6rem;
+    background-color: #192632;
+    transition: .25s
+  }
+  .burger span:first-child {
+    margin-bottom: .6rem
+  }
+  .burger span:last-child {
+    width: 33.3%;
+    margin-left: auto
+  }
+  .burger_active span:first-child {
+    transform: rotate(45deg);
+    margin-bottom: -.6rem
+  }
+  .burger_active span:last-child {
+    width: 100%;
+    margin: 0;
+    transform: rotate(-45deg)
+  }
+}
